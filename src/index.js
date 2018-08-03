@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import {CloudinaryContext, Transformation, Image} from 'cloudinary-react';
+import {render} from 'react-dom';
 
-class Home extends componenet {
+class Home extends Component {
   render() {
     return (
       <div className="main">
-        <h1>Gallery</h1>
+        <h1 className = "headline">Gallery</h1>
       </div>
     )
   }
 }
 
-render(<Home/>, document.getElementById('container'));
+render (<Home/>, document.getElementById('container'));
